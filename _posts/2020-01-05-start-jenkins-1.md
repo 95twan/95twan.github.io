@@ -24,6 +24,6 @@ CI 툴은 circleCI, Jenkins, Travis CI, Bamboo 등이 있다.
 [Homebrew 설치하기](https://brew.sh/index_ko)
 
 Homebrew가 설치됐다면 [Jenkins 홈페이지](https://jenkins.io)에서 원하는 버전을 받으면 된다.
-![](../assets/images/IMG_0109.jpeg)
+![](/assets/images/IMG_0109.jpeg)
 
 저는 Jenkins-LTS 버전을 선택해 `brew install jenkins-lts`로 설치했다.
