@@ -6,6 +6,7 @@ categories:
 tags:
   - Jenkins
   - CI/CD
+classes: wide
 ---
 
 토이 프로젝트를  진행하면서 
