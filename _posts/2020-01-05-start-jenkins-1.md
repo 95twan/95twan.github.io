@@ -10,21 +10,49 @@ classes: wide
 ---
 
 토이 프로젝트를  진행하면서 
-빌드, 테스트, 배포 과정을 수동으로 반복하면서 시간이 점점 늘어났다.
-시간 단축과 빌드 및 배포 자동화를 위해 CI 툴을 사용해보려고 한다.
+빌드, 테스트, 배포 과정을 수동으로 반복하면서 시간이 점점 늘어났습니다.
+시간 단축과 빌드 및 배포 자동화를 위해 CI 툴을 사용해보려고 합니다.
 
-CI 툴은 circleCI, Jenkins, Travis CI, Bamboo 등이 있다.
-그중에서 	Jenkins를 사용해보려고 한다.
+CI 툴은 circleCI, Jenkins, Travis CI, Bamboo 등이 있습니다.
+그중에서 	Jenkins를 사용해보려고 합니다.
 
 
 
 ## 1. Jenkins 설치하기
 - - - -
-내 개발 환경은 MacOS로 현재 패키지 관리자인 Homebrew가 설치되어있다.
+제 개발 환경은 MacOS로 현재 패키지 관리자인 Homebrew가 설치되어있습니다.
 
 [Homebrew 설치하기](https://brew.sh/index_ko)
 
-Homebrew가 설치됐다면 [Jenkins 홈페이지](https://jenkins.io)에서 원하는 버전을 받으면 된다.
-![](/assets/images/IMG_0109.jpeg)
+Homebrew가 설치됐다면 [Jenkins 홈페이지](https://jenkins.io)에서 원하는 버전을 받으면 됩니다.
+![](/assets/images/Jenkins_start_1-01.jpeg)
 
-저는 Jenkins-LTS 버전을 선택해 `brew install jenkins-lts`로 설치했다.
+저는 Jenkins-LTS 버전을 선택해 `brew install jenkins-lts`로 설치했습니다.
+
+설치중에 이런 오류가 나오면
+![](/assets/images/Jenkins_start_1-02.png)
+`brew cask install homebrew/cask-versions/adoptopenjdk8`로 자바를 설치해 주면 됩니다.
+
+설치가 끝나 후 터미널에 `jenkins-lts`로 직접 실행하거나
+`brew services start jenkins-lts`를 입력해 백그라운드 서비스로 등록해도 됩니다.
+
+Jenkins를 실행 하면 기본적으로 `http://localhost:8080`으로 접속이 가능합니다.
+
+![](/assets/images/Jenkins_start_1-03.png)
+
+로딩을 기다리면 비밀번호를 입력하라고 하는데 가려놓은 붉은 색 부분에 비밀번호가 있는 파일이 있습니다.
+`cat` 명령어를 사용해 해당 비밀번호를 확인 후 입력하면 됩니다.
+![](/assets/images/Jenkins_start_1-04.png)
+
+플러그인 설치 화면이 나오면 일반적으로 사용되는 플러그인들을 설치해주는 왼쪽을 클릭해 설치를 진행하면 됩니다. 나중에 원하는 플러그인을 추가로 설치 할 수 있습니다.
+![](/assets/images/Jenkins_start_1-05.png)
+![](/assets/images/Jenkins_start_1-06.png)
+
+플러그인 설치가 끝나면 관리자 계정을 만드는 화면이 나옵니다.
+Jenkins에 접속할 때 필요하므로 자신에게 맞는 정보를 입력합니다.
+![](/assets/images/Jenkins_start_1-07.png)
+
+정보등록이 끝나면 Jenkins로 접속할 수 있습니다.
+![](/assets/images/Jenkins_start_1-08.png)
+
+다음 포스팅은 Jenkins로 간단하게 github hook을 활용한 자동 배포를 해보겠습니다.
