@@ -6,6 +6,7 @@ categories:
 tags:
   - Jenkins
   - CI/CD
+  - 배포 자동화
 classes: wide
 ---
 
@@ -18,7 +19,7 @@ CI 툴은 circleCI, Jenkins, Travis CI, Bamboo 등이 있습니다.
 
 
 
-## 1. Jenkins 설치하기
+## Jenkins 설치하기
 - - - -
 제 개발 환경은 MacOS로 현재 패키지 관리자인 Homebrew가 설치되어있습니다.
 
@@ -55,4 +56,12 @@ Jenkins에 접속할 때 필요하므로 자신에게 맞는 정보를 입력합
 정보등록이 끝나면 Jenkins로 접속할 수 있습니다.
 ![](/assets/images/Jenkins_start_1-08.png)
 
-다음 포스팅은 Jenkins로 간단하게 github hook을 활용한 자동 배포를 해보겠습니다.
+## Jenkins 설정하기
+- - - -
+github를 이용해 배포를 진행하기 위해서는 추가로 설정을 해줘야 됩니다.
+젠킨스 메인의 `Jenkins 관리`에서, `Global Tool Configuration` 메뉴로 들어갑니다.
+![](/assets/images/Jenkins_start_1-09.png)
+
+git을 설정해 줍니다. Name은 원하는대로 설정해 주고 밑에는 git이 설치되어있는 Path를 적어주면 됩니다.
+설치 위치를 모르면 터미널에 `where git`으로 찾으면 됩니다.
+![](/assets/images/Jenkins_start_1-10.png)
