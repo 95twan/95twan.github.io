@@ -16,22 +16,17 @@ classes: wide
 <br/>
 
 2. **생성한 컨테이너 확인하기**   
-터미널에 `docker ps`를 입력하면 현재 실행되고 있는 컨테이너 목록을 확인할 수 있습니다.
-
-![](/assets/images/docker_start/02-01.png)
-
-실행을 멈춘 컨테이너를 포함한 모든 컨테이너를 확인할 때는 `docker ps -a`를 사용합니다.
-
+터미널에 `docker ps`를 입력하면 현재 실행되고 있는 컨테이너 목록을 확인할 수 있습니다.   
+![](/assets/images/docker_start/02-01.png)   
+실행을 멈춘 컨테이너를 포함한 모든 컨테이너를 확인할 때는 `docker ps -a`를 사용합니다.   
 ![](/assets/images/docker_start/02-02.png)
 
 <br/>
 
 3. **컨테이너 삭제**   
-`docker rm 컨테이너 아이디 또는 이름`을 입력하면 컨테이너를 삭제할 수 있습니다.
-
+`docker rm 컨테이너 아이디 또는 이름`을 입력하면 컨테이너를 삭제할 수 있습니다.   
 ![](/assets/images/docker_start/02-03.png)
-![](/assets/images/docker_start/02-04.png)
-
+![](/assets/images/docker_start/02-04.png)   
 실행중인 컨테이너는 그냥 삭제할 수 없기 때문에 삭제하기전 `docker stop 컨테이너 이름 또는 아이디`로 컨테이너를 정지 한 뒤 삭제합니다.   
 또는 `docker rm -f`를 사용해 강제로 삭제할 수 있습니다.
 
@@ -39,8 +34,7 @@ classes: wide
 - - -
 1. **도커 저장소에 이미지 받고 받은 이미지 확인하기**   
 도커 저장소에서 이미지를 받을 때는 `docker pull`을 사용해 이미지를 받을 수 있습니다.
-저장된 이미지들은 `docker images`로 확인할 수 있습니다.
-
+저장된 이미지들은 `docker images`로 확인할 수 있습니다.   
 ![](/assets/images/docker_start/02-05.png)
 
 <br/>
@@ -52,12 +46,9 @@ classes: wide
 <br/>
 
 3. **이미지 개인 저장소에 올리기**   
-[Docker Hub](https://hub.docker.com/)에서 개인 저장소를 만들어 이미지를 저장 할 수 있습니다. 저장소의 이름은 `회원 이름/이미지 이름` 이기도 하고 저장될 이미지의 이름이기도 합니다.
-
-![](/assets/images/docker_start/02-06.png)
-
+[Docker Hub](https://hub.docker.com/)에서 개인 저장소를 만들어 이미지를 저장 할 수 있습니다. 저장소의 이름은 `회원 이름/이미지 이름` 이기도 하고 저장될 이미지의 이름이기도 합니다.   
+![](/assets/images/docker_start/02-06.png)   
 올리고 싶은 이미지를 `docker tag [기존 이미지 이름] [새롭게 생성될 이미지 이름]`으로 만들어 놓은 저장소 이름으로 바꿉니다.   
 그 후 개인 저장소에 올릴때는 login을 해야하기 때문에 터미널에 `docker login`을 입력해 로그인 후   
-`docker push [새롭게 생성된 이미지 이름]`을 입력하면 저장소에 저장이 됩니다.
-
+`docker push [새롭게 생성된 이미지 이름]`을 입력하면 저장소에 저장이 됩니다.   
 ![](/assets/images/docker_start/02-07.png)
