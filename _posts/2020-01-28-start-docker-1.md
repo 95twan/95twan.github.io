@@ -28,7 +28,9 @@ classes: wide
 OSX나 Windows는 [Docker 홈페이지](https://www.docker.com/)에서 회원가입 후 간단하게 Docker for mac/windows 설치 파일을 받아 실행하면 간단하게 설치가 완료됩니다.
 
 설치가 완료되면 상단 바에 도커 아이콘을 확인할 수 있습니다.
+
 ![](/assets/images/docker_start/01-02.png)
+
 그리고 터미널에 `docker -v`를 입력하면 도커 버전을 확인 할 수 있습니다.
 ![](/assets/images/docker_start/01-03.png)
 
