@@ -13,6 +13,7 @@ classes: wide
 도커는 컨테이너 기반의 오픈소스 가상화 플랫폼 입니다.
 컨테이너는 프로세스를 격리된 공간에서 동작하시키는 기술입니다.
 기존에 사용하던 VMware나 VirtualBox과 같은 가상머신에 Host OS 위에 Guest OS를 가상화하는 방식과는 다르게 추가적인 OS를 설치하지 않는 **프로세스 격리 방식**을 사용합니다.
+
 ![](/assets/images/docker_start/01-01.png)
 
 #### Docker를 사용하는 이유는
@@ -32,6 +33,7 @@ OSX나 Windows는 [Docker 홈페이지](https://www.docker.com/)에서 회원가
 ![](/assets/images/docker_start/01-02.png)
 
 그리고 터미널에 `docker -v`를 입력하면 도커 버전을 확인 할 수 있습니다.
+
 ![](/assets/images/docker_start/01-03.png)
 
 ## Docker 이미지
