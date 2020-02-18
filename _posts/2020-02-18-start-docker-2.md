@@ -20,7 +20,6 @@ classes: wide
 ![](/assets/images/docker_start/02-01.png)   
 실행을 멈춘 컨테이너를 포함한 모든 컨테이너를 확인할 때는 `docker ps -a`를 사용합니다.   
 ![](/assets/images/docker_start/02-02.png)
-
 <br/>
 
 3. **컨테이너 삭제**   
@@ -36,7 +35,6 @@ classes: wide
 도커 저장소에서 이미지를 받을 때는 `docker pull`을 사용해 이미지를 받을 수 있습니다.
 저장된 이미지들은 `docker images`로 확인할 수 있습니다.   
 ![](/assets/images/docker_start/02-05.png)
-
 <br/>
 
 2. **기존의 컨테이너로 이미지 만들기**   
