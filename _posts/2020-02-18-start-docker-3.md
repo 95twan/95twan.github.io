@@ -58,7 +58,8 @@ ADD나 COPY를 통해 여러 파일은 한번에 추가할 때 그 중에 이미
 - - -
 Dockerfile이 있는 디렉토리에서 `docker build -t firstbuild:0.1 ./`로 빌드가 가능합니다.   
 끝에 `./`는 Dockerfile이 저장된 경로를 입력합니다.   
-`-t`옵션은 생성될 이미지의 이름을 입력할 수 있습니다.   
+`-t`옵션은 생성될 이미지의 이름을 입력할 수 있습니다.  
+만약 Dockerfile의 이름을 Dockerfile2라는 이름으로 만든다면 `-f Dockerfile2`옵션을 사용해 파일 이름을 지정해 사용할 수 있습니다.   
 `docker run -d -P --name firstserver firstbuild:0.1`로 컨테이너를 실행해봅시다.   
 `-d`옵션은 detached 모드로 컨테이너를 실행합니다
 `-P`옵션은 EXPOSE에 설정한 포트 번호와 호스트에서 사용 가능한 포트에 연결 됩니다. 하지만 호스트의 몇번포트와 연결됬는지 알 수 없기 때문에 `docker port firstserver`로 확인해야합니다.   
