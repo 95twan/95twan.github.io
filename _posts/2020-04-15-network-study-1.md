@@ -50,7 +50,7 @@ classes: wide
 
 1. HTTP 요청 메세지 형식
 
-   ```HTTP
+   ```
    GET /api/board/ HTTP/1.1
    Host: 15.165.206.181:8000
    Content-Type: application/json
@@ -67,7 +67,7 @@ classes: wide
 
 2. HTTP 응답 메세지 형식
 
-   ```HTTP
+   ```
    HTTP/1.1 200 OK
    content-length: 212
    content-type: application/json
